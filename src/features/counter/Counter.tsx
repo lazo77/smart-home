@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import {
@@ -63,6 +64,9 @@ export function Counter() {
           Add If Odd
         </button>
       </div>
+      <nav>
+        <Link to="/">Home</Link>
+      </nav>
     </div>
   );
 }
